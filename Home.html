@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--dont forget to add meta tags-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href=""><!--add favicon here(PNG)-->
+        <title>Nithish Radhakrishnan Portfolio</title>
+
+        <style>
+            .grid{
+                font-family: Arial, Helvetica, sans-serif;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                border: 1px solid black;
+            }
+            .grid div{
+                font-family: Arial, Helvetica, sans-serif;
+                border: 1px solid black;
+                text-align: left;
+            }
+            .flex{
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 30px;
+                margin-top: 10px;
+            }
+            .flex div{
+                font-family: Arial, Helvetica, sans-serif;
+                flex: 1 1 250px;
+                max-width: 300px;
+                min-width: 200px;
+                border: 1px solid black;
+                padding: 30px;
+                box-sizing: border-box;
+                border-radius: 30%;
+            }
+            .reviews{
+                font-family: Arial, Helvetica, sans-serif;
+                border: 1px solid black;
+            }
+            .author{
+                font-family: Arial, Helvetica, sans-serif;
+                color: gray;
+                font-weight: bold;
+            }
+            .author span{
+                font-family: Arial, Helvetica, sans-serif;
+                color: gray;
+                font-weight: bold;
+            }
+            .navBar{
+                font-family: Arial, Helvetica, sans-serif;
+                border: 3px solid black;
+            }
+            .navBar table{
+                width: 100%;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+        <div class="navBar" ">
+            <table>
+                <th >
+                    <img src="nithish.png" title="it's ME!" alt="it should show my face!" style="width: 1cm; height: 1cm; border-radius: 50%;">
+                </th>
+                <th style="width: 60%;text-align: left;">
+                    <a href="https://www.linkedin.com/in/nithish-usr">Nithish Radhakrishnan</a>
+                </th>
+                <th style="text-align: right;">
+                        <a href="">Home</a>
+                        <a href="">Projects</a>
+                        <a href="">Articles</a>
+                        <a href="cv.html">About</a>
+                </th>
+            </table>
+            <h1 style="text-align: center;">Nithish Radhakrishnan</h1>
+            <p style="text-align: center;">some description here</p>
+        </div>
+        <!--Use CSS Grid Layout-->
+        <div class="grid">
+            <div >Projects
+                <p style="border-bottom: 1px solid black;">project1</p>
+                <p style="border-bottom: 1px solid black;">project2</p>
+                <p>project3</p>
+            </div>
+            <div >Work Experience
+                <p>Work Experience 1</p>
+                <p style="border-bottom: 1px solid black;">Description 1</p>
+                <p>Work Experience 2</p>
+                <p>Description 2</p>
+            </div>
+            <div >Education
+                <p>Education 1</p>
+                <p style="border-bottom: 1px solid black;">Education description 1</p>
+                <p>Education 2</p>
+                <p>Education description 2</p>
+            </div>
+        </div>
+        <!--will use CSS flex layout here-->
+        <section class="reviews">
+            <h3>Reviews</h3>
+            <p>some reviews I got or i'll get</p>
+       <div class="flex">
+        <div>review 1
+            <p>vnlkwnlkwnlvlkvsv vkevn lnlklsnv klv vnv klenvlev</p>
+            <p>wnvl elk lkwrnvlwrmvkrvklvwrlkwmvwrkmv kwrv wlvmlm</p>
+            <p class="author">Author Name<br><span>position/title</span></p>
+        </div>
+        <div>review 2
+            <p class="author">Author Name<br><span>position/title</span></p>
+        </div>
+        <div>review 3
+            <p class="author">Author Name<br><span>position/title</span></p>
+        </div>
+       </div>
+       </section>
+    </body>
+</html>
