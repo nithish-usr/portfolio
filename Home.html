@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href=""><!--add favicon here(PNG)-->
         <title>Nithish Radhakrishnan Portfolio</title>
+        <meta property="og:title" content="Nithish Radhakrishnan - Portfolio">
+        <meta property="og:description" content="About Me">
+        <meta property="og:url" content="http://github.com/nithish-usr"><!--paste project github link here-->
+        <meta property="og:type" content="Portfolio">
+        <meta property="og:site-name" content="Nithish Radhakrishnan Portfolio">
 
         <style>
             .grid{
@@ -13,12 +18,17 @@
                 display: grid;
                 grid-template-columns: auto auto auto;
                 border: 1px solid black;
+                
             }
             .grid div{
                 font-family: Arial, Helvetica, sans-serif;
-                border: 1px solid black;
+                border: 1px solid black; 
                 text-align: left;
-            }
+                justify-content: right;
+                padding-top: 10px;
+               
+            }             
+            
             .flex{
                 font-family: Arial, Helvetica, sans-serif;
                 display: flex;
@@ -40,6 +50,8 @@
             .reviews{
                 font-family: Arial, Helvetica, sans-serif;
                 border: 1px solid black;
+                padding-left: 20px;
+                padding-right: 5px;
             }
             .author{
                 font-family: Arial, Helvetica, sans-serif;
@@ -72,14 +84,14 @@
                     <a href="https://www.linkedin.com/in/nithish-usr">Nithish Radhakrishnan</a>
                 </th>
                 <th style="text-align: right;">
-                        <a href="">Home</a>
-                        <a href="">Projects</a>
-                        <a href="">Articles</a>
+                        <a href="Home.html">Home</a>
+                        <a href="Projects.html">Projects</a>
+                        <a href="Article.html">Articles</a>
                         <a href="cv.html">About</a>
                 </th>
             </table>
             <h1 style="text-align: center;">Nithish Radhakrishnan</h1>
-            <p style="text-align: center;">some description here</p>
+            <p style="text-align: center;">A recent graduate with an MSc in Management and an BTech in Computer Science and Engineering, open to opportunities</p>
         </div>
         <!--Use CSS Grid Layout-->
         <div class="grid">
