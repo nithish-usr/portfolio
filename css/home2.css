@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    font-family: "", sans-serif;
+}
+/* some tips - need not be followed necessarily */
+/* use different styles for links and use pointer css for link */
+/* try incorporating css positions */
+/* try overflow */
+/* try to use float in css to create box contents (i.e) box contents as required in the documentation */
+/* use css combinators to style specific elements */
+/* use css pseudo-classes - :hover and :focus */
+/* check css website layouts */
+/* use css box-model for element design */
+
+nav {
+    position: sticky;
+    list-style-type: none;
+    margin: 0px;
+    padding: 18px;
+    overflow: hidden;
+}
+nav li {
+    float: left;
+}
+
+nav li.navLeft {
+    float: right;
+}
+nav li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: none;
+}
+.roleDescription {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 2px groove black;
+    border-radius: 20px;
+    box-shadow: 10px 10px blue;
+}
+.flexboxParent1 {
+    min-height: 400px;
+    border: 1px solid black;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.flexboxChild {
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.flexboxChild:hover {
+    transform: translateY(-5px) translateX(-15px) scale(1.05);
+    box-shadow: 0 8px 20px blue;
+    cursor: pointer;
+}
+.gridboxParent1 {
+    display: grid;
+    grid-auto-columns: 300px;
+    grid-auto-rows: 200px;
+    gap: 1em;
+    justify-content: center;
+    grid-template-areas: 
+    "box1 box1 box1"
+    "box2 box3 box4";
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gridboxChild {
+    padding: 2em;
+    background-color: beige;
+    color: black;
+    text-align: center;
+    border-radius: 8px;
+}
+.gridboxChild:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 25px blue;
+    cursor: pointer;
+}
+
+#gC1 {
+    text-align: left;
+    height: 100px;
+}
+@media(max-width: 56em){
+    .gridboxParent1{
+        grid-template-areas: 
+        "box1 box1 box1"
+        "box2 box3 box4";
+    }
+}
+
